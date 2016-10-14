@@ -1505,8 +1505,8 @@ ul {
     box-shadow: none
 }
 
-#speaker-teeliechua {
-    background: url(../images/speakers/speaker-teeliechua-modal.jpg) center top no-repeat, #fff;
+#speaker-clarkangelourzo {
+    background: url(../images/speakers/speaker-clarkangelourzo-modal.jpg) center top no-repeat, #fff;
     background-size: cover;
     -webkit-box-shadow: none;
     box-shadow: none
@@ -1573,6 +1573,40 @@ ul {
     background-size: cover;
     -webkit-box-shadow: none;
     box-shadow: none
+}
+#speaker-paulolozano {
+   background: url(../images/speakers/speaker-paulolozano-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none 
+}
+
+#speaker-juanpaoloespiritu {
+   background: url(../images/speakers/speaker-juanpaoloespiritu-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none 
+}
+
+#speaker-christopherdavid {
+   background: url(../images/speakers/speaker-christopherdavid-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none 
+}
+
+#speaker-josefvelasquez {
+   background: url(../images/speakers/speaker-josefvelasquez-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+#speaker-teodororico {
+    background: url(../images/speakers/speaker-teodororico-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
 }
 
 .blocker {
