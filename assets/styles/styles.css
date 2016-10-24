@@ -1651,8 +1651,7 @@ ul {
 }
 
 .other-schedule .stage-name,
-.section-register .ticket-inclusions .title,
-.tab-menu .menu {
+.section-register .ticket-inclusions .title {
     font-family: ailerons, HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
@@ -1719,52 +1718,69 @@ ul {
     transition: all .5s ease
 }
 
-.section-agenda .date-content.current {
+.section-agenda .date-content.active {
     display: inherit;
     -webkit-transition: all .5s ease;
     transition: all .5s ease
 }
 
-.stage-menu {
-    width: 100%
+.ui-state-active .button {
+    border: 1px solid #44BF65;
+    background: #44BF65;
+    color: #fff;
 }
 
-.stage-menu .menu-main,
-.stage-menu .menu-special {
+.tab-menu .menu-main,
+.tab-menu .menu-special {
     float: left;
+    width: 25%;
     text-align: center;
-    padding: 0 20px 10px;
-    cursor: pointer
+    cursor: pointer;
+    outline: 0;
 }
 
-.stage-menu .current {
-    padding: 0 20px 10px;
+.tab-menu .ui-state-active .menu {
+    padding-bottom:  10px;
     border-bottom: 1px solid #333
 }
 
 .tab-menu {
-    width: 365px;
+    width: 100%;
     margin: 0 auto
 }
 
 .tab-menu .menu {
-    font-size: 1.5em;
+    font-size: 1.20em;
+    font-weight: 700;
     color: #333;
     padding: 0;
     text-decoration: none;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
-    border: 0
+    border: 0;
+    outline: 0;
+    text-transform: uppercase;
+    padding-bottom:  10px;
+}
+
+.tab-nav {
+    list-style: none;
+}
+
+.tab-nav li {
+    display: inline;
+}
+
+.tab-nav li a {
+    text-decoration: none;
 }
 
 .schedule-content {
-    display: none;
     -webkit-transition: all .5s ease;
     transition: all .5s ease
 }
 
-.schedule-content.current {
-    display: inherit;
+.schedule-content.active {
     -webkit-transition: all .5s ease;
     transition: all .5s ease
 }
@@ -1817,9 +1833,13 @@ ul {
 .other-schedule .stage-name {
     margin: 30px 0;
     text-align: center;
-    color: #333;
+    text-transform: uppercase;
     font-size: 3em;
-    text-shadow: 3px 3px 0 rgba(255, 50, 50, .5), -3px -3px 0 rgba(0, 220, 220, .5)
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    color: #44BF65;
+    text-shadow: 0 1px 0 #3cae5a, 0 2px 0 #38a354, 0 3px 0 #34974e, 0 4px 0 #308c48, 0 5px 0 #2c8043, 0 6px 1px rgba(68, 191, 101, .1), 0 0 5px rgba(68, 191, 101, .1), 0 1px 3px rgba(68, 191, 101, .3), 0 3px 5px rgba(68, 191, 101, .2), 0 5px 10px rgba(68, 191, 101, .25), 0 10px 10px rgba(68, 191, 101, .2), 0 20px 20px rgba(68, 191, 101, .15);
+    font-weight: 700
 }
 
 .other-schedule table {
@@ -1852,6 +1872,7 @@ ul {
     text-align: right;
     padding-right: 20px
 }
+
 
 .footer,
 .section-sponsors .content,
@@ -2320,12 +2341,79 @@ ul {
         margin: 0;
         height: 100%
     }
+
+    .section-agenda,
     .section-register,
     .section-sponsors,
     .section-venue {
         min-height: 100%;
         padding: 7em 0;
-        width: 100%
+        width: 100%;
+    }
+    .tab-nav li {
+        width: 48%;
+        float: left;
+        padding:0 1%;
+
+    }
+    .section-agenda .schedule-day .button {
+        margin: 0;
+        width: 100%;
+        font-size: 12px;
+        padding:  0;
+        text-transform: uppercase;
+    }
+    .tab-menu {
+        margin: 20px auto;
+        display: inline-block;
+    }
+    .tab-menu .menu-main, .tab-menu .menu-special {
+        width:  100%;
+    }
+
+    .tab-menu .menu {
+        padding:  0;
+    }
+
+    .tab-menu .ui-state-active .menu {
+        border:  none;
+        color: #44BF65;
+        padding: 0;
+    }
+
+    .main-schedule li:first-child, .main-schedule li:last-child {
+        text-align: center;
+    }
+
+    .main-schedule li {
+        border-right: 0;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .main-schedule {
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .stage-name {
+        margin: 20px 0 0;
+        font-size:  2.5em;
+    }
+    .stage-description {
+        font-size: 1.25em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .other-schedule table td:first-child {
+        font-size: 1em;
+        padding-right: 10px;
+    }
+    .other-schedule table td {
+        padding: 10px 0 0;
+    }
+    .other-schedule table td h5 {
+        font-size: 1.25em;
     }
     .section-register {
         background: url(../images/register-bg.jpg) center center/cover no-repeat, #44BF65
@@ -2705,6 +2793,73 @@ ul {
         margin: 0;
         height: 100%
     }
+    .tab-nav li {
+        width: 48%;
+        float: left;
+        padding:0 1%;
+
+    }
+    .section-agenda .schedule-day .button {
+        margin: 0;
+        width: 100%;
+        font-size: 12px;
+        padding:  0;
+        text-transform: uppercase;
+    }
+    .tab-menu {
+        margin: 20px auto;
+        display: inline-block;
+    }
+    .tab-menu .menu-main, .tab-menu .menu-special {
+        width:  100%;
+    }
+
+    .tab-menu .menu {
+        padding:  0;
+    }
+
+    .tab-menu .ui-state-active .menu {
+        border:  none;
+        color: #44BF65;
+        padding: 0;
+    }
+
+    .main-schedule li:first-child, .main-schedule li:last-child {
+        text-align: center;
+    }
+
+    .main-schedule li {
+        border-right: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        width:  100%;
+    }
+
+    .main-schedule {
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .stage-name {
+        margin: 20px 0 0;
+        font-size:  2.5em;
+    }
+    .stage-description {
+        font-size: 1.25em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .other-schedule table td:first-child {
+        font-size: 1em;
+        padding-right: 10px;
+    }
+    .other-schedule table td {
+        padding: 10px 0 0;
+    }
+    .other-schedule table td h5 {
+        font-size: 1.25em;
+    }
+
     .section-register {
         background: url(../images/register-bg.jpg) center center/cover no-repeat, #44BF65;
         min-height: 100%;
@@ -3093,6 +3248,74 @@ ul {
         float: left;
         margin: 20px 5% 20px 0
     }
+
+    .tab-nav li {
+        width: 48%;
+        float: left;
+        padding:0 1%;
+
+    }
+    .section-agenda .schedule-day .button {
+        margin: 0;
+        width: 100%;
+        font-size: 12px;
+        padding:  0;
+        text-transform: uppercase;
+    }
+    .tab-menu {
+        margin: 20px auto;
+        display: inline-block;
+    }
+    .tab-menu .menu-main, .tab-menu .menu-special {
+        width:  100%;
+    }
+
+    .tab-menu .menu {
+        padding:  0;
+    }
+
+    .tab-menu .ui-state-active .menu {
+        border:  none;
+        color: #44BF65;
+        padding: 0;
+    }
+
+    .main-schedule li:first-child, .main-schedule li:last-child {
+        text-align: center;
+    }
+
+    .main-schedule li {
+        border-right: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .main-schedule {
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .stage-name {
+        margin: 20px 0 0;
+        font-size:  2.5em;
+    }
+    .stage-description {
+        font-size: 1.25em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .other-schedule table td:first-child {
+        font-size: 1em;
+        padding-right: 10px;
+    }
+    .other-schedule table td {
+        padding: 10px 0 0;
+    }
+    .other-schedule table td h5 {
+        font-size: 1.25em;
+    }
+
     .section-register {
         background: url(../images/register-bg.jpg) center center/cover no-repeat, #44BF65;
         width: 100%
@@ -3307,6 +3530,73 @@ ul {
         float: left;
         margin: 20px 1% 20px 0
     }
+
+    .tab-nav li {
+        width: 48%;
+        float: left;
+        padding:0 1%;
+
+    }
+    .section-agenda .schedule-day .button {
+        margin: 0;
+        width: 100%;
+        font-size: 12px;
+        padding:  0;
+        text-transform: uppercase;
+    }
+    .tab-menu {
+        margin: 20px auto;
+        display: inline-block;
+    }
+    .tab-menu .menu-main, .tab-menu .menu-special {
+        width:  100%;
+    }
+
+    .tab-menu .menu {
+        padding:  0;
+    }
+
+    .tab-menu .ui-state-active .menu {
+        border:  none;
+        color: #44BF65;
+        padding: 0;
+    }
+
+    .main-schedule li:first-child, .main-schedule li:last-child {
+        text-align: center;
+    }
+
+    .main-schedule li {
+        border-right: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .main-schedule {
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .stage-name {
+        margin: 20px 0 0;
+        font-size:  2.5em;
+    }
+    .stage-description {
+        font-size: 1.25em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .other-schedule table td:first-child {
+        font-size: 1em;
+        padding-right: 10px;
+    }
+    .other-schedule table td {
+        padding: 10px 0 0;
+    }
+    .other-schedule table td h5 {
+        font-size: 1.25em;
+    }
 }
 
 @media (min-device-width:768px) and (max-device-width:1024px) {
@@ -3341,5 +3631,72 @@ ul {
     .section-speakers .speaker-list-one .speakers {
         float: left;
         margin: 20px 1% 20px 0
+    }
+
+    .tab-nav li {
+        width: 48%;
+        float: left;
+        padding:0 1%;
+
+    }
+    .section-agenda .schedule-day .button {
+        margin: 0;
+        width: 100%;
+        font-size: 12px;
+        padding:  0;
+        text-transform: uppercase;
+    }
+    .tab-menu {
+        margin: 20px auto;
+        display: inline-block;
+    }
+    .tab-menu .menu-main, .tab-menu .menu-special {
+        width:  100%;
+    }
+
+    .tab-menu .menu {
+        padding:  0;
+    }
+
+    .tab-menu .ui-state-active .menu {
+        border:  none;
+        color: #44BF65;
+        padding: 0;
+    }
+
+    .main-schedule li:first-child, .main-schedule li:last-child {
+        text-align: center;
+    }
+
+    .main-schedule li {
+        border-right: 0;
+        padding: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .main-schedule {
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .stage-name {
+        margin: 20px 0 0;
+        font-size:  2.5em;
+    }
+    .stage-description {
+        font-size: 1.25em;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+    .other-schedule table td:first-child {
+        font-size: 1em;
+        padding-right: 10px;
+    }
+    .other-schedule table td {
+        padding: 10px 0 0;
+    }
+    .other-schedule table td h5 {
+        font-size: 1.25em;
     }
 }
