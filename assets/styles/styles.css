@@ -1609,6 +1609,20 @@ ul {
    box-shadow: none  
 }
 
+#speaker-christinebalabat {
+    background: url(../images/speakers/speaker-christinebalabat-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+#speaker-olivierklein {
+    background: url(../images/speakers/speaker-olivierklein-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
 .blocker {
     z-index: 9999
 }
