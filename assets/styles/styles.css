@@ -2163,6 +2163,12 @@ ul {
 .footer-menu li a:hover {
     color: #1d9cd1
 }
+.special-track-description, .special-track-summary {
+  font-size: 90%;
+}
+.special-track-description {
+  display: none;
+}
 
 @media only screen and (max-width:480px) {
     .headings .message,
