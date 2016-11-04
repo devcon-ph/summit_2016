@@ -1714,6 +1714,13 @@ ul {
    box-shadow: none  
 }
 
+#speaker-micaeldiazderivera {
+    background: url(../images/speakers/speaker-micaeldiazderivera-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
 
 .blocker {
     z-index: 9999
