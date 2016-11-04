@@ -1623,6 +1623,28 @@ ul {
    box-shadow: none  
 }
 
+#speaker-sarakuizon {
+    background: url(../images/speakers/speaker-sarakuizon-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+#speaker-chrismisola {
+    background: url(../images/speakers/speaker-chrismisola-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+#speaker-trinnahreyes {
+    background: url(../images/speakers/speaker-trinnahreyes-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+
 .blocker {
     z-index: 9999
 }
@@ -1737,6 +1759,16 @@ ul {
     -webkit-transition: all .5s ease;
     transition: all .5s ease
 }
+
+.section-agenda .content {
+    margin-top: 2em;
+    text-align: center
+}
+
+.section-agenda .download {
+    font-weight: 400;
+}
+
 
 .ui-state-active .button {
     border: 1px solid #44BF65;
