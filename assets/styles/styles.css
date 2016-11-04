@@ -1680,7 +1680,35 @@ ul {
 }
 
 #speaker-neiljoshuarealubit {
-    background: url(../images/speakers/speaker-trinnahreyes-modal.jpg) center top no-repeat, #fff;
+    background: url(../images/speakers/speaker-neiljoshuarealubit-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+#speaker-jslimjap {
+    background: url(../images/speakers/speaker-jslimjap-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+#speaker-justinedayrit {
+    background: url(../images/speakers/speaker-justinedayrit-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+#speaker-diwadelmundo {
+    background: url(../images/speakers/speaker-diwadelmundo-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+#speaker-raymundvidar {
+    background: url(../images/speakers/speaker-raymundvidar-modal.jpg) center top no-repeat, #fff;
    background-size: cover;
    -webkit-box-shadow: none;
    box-shadow: none  
