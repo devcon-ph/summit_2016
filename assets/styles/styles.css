@@ -1644,6 +1644,48 @@ ul {
    box-shadow: none  
 }
 
+#speaker-jameschua {
+    background: url(../images/speakers/speaker-jameschua-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+#speaker-jojobalbin {
+    background: url(../images/speakers/speaker-jojobalbin-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+#speaker-francisbautista {
+    background: url(../images/speakers/speaker-francisbautista-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+#speaker-albertgavino {
+    background: url(../images/speakers/speaker-albertgavino-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+#speaker-philsmithson {
+    background: url(../images/speakers/speaker-philsmithson-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
+#speaker-neiljoshuarealubit {
+    background: url(../images/speakers/speaker-trinnahreyes-modal.jpg) center top no-repeat, #fff;
+   background-size: cover;
+   -webkit-box-shadow: none;
+   box-shadow: none  
+}
+
 
 .blocker {
     z-index: 9999
